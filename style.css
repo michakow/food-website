@@ -14,7 +14,7 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-
+/* ====================================================== SIDE PANEL ====================================================== */
 .side-panel{
     position: sticky;
     top: 0;
@@ -65,10 +65,10 @@ body{
     color: rgb(252,240,138);
     border-color: rgb(252,240,138);
 }
-
 .main{
     flex-grow: 1;
 }
+/* ====================================================== HEADER ====================================================== */
 .header{
     position: fixed;
     top: 0;
@@ -78,7 +78,7 @@ body{
     display: flex;
     align-items: center;
     z-index: 1;
-    background-color: #466;
+    background-color: transparent;
 }
 .header__logo{
     flex-basis: 20%;
@@ -127,4 +127,37 @@ body{
 }
 .header__newsletter-button:active{
     background-color: rgb(231, 222, 135)
+}
+.section{
+    height: 100vh;
+    padding: 110px 10px 0 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* ====================================================== HOME SECTION ====================================================== */
+.home{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url('./img/home.jpg');
+}
+.home__slogan-area{
+    width: 90%;
+    margin: 45px auto;
+}
+.home__h1{
+    font-size: 60px;
+    color: cornsilk;
+    line-height: 1.4;
+    font-weight: bold;
+}
+.home__h2{
+    margin-top: 20px;
+    font-size: 35px;
+    color: cornsilk;
+    text-transform: uppercase;
+}
+.home__span-h1{
+    color: rgb(226,213,99);
+}
+.home__span-h2{
+    color: rgb(219,32,32);
 }
