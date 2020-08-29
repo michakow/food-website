@@ -12,7 +12,7 @@ body{
 .page{
     display: flex;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* ====================================================== SIDE PANEL ====================================================== */
 .side-panel{
@@ -161,3 +161,59 @@ body{
 .home__span-h2{
     color: rgb(219,32,32);
 }
+/* ====================================================== MENU SECTION ====================================================== */
+.menu{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url('./img/menu.jpg');
+}
+.menu__menu-card{
+    width: 60%;
+    height: 80%;
+    margin: 40px auto 0 auto;
+    padding: 20px 15px;
+    background-color: rgba(226,226,226,.9);
+    border: 3px solid rgba(0,0,0,.3);
+    border-radius: 60px;
+    display: flex;
+}
+.menu__left-side{
+    flex-basis: 50%;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__center-line{
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+}
+.menu__right-side{
+    flex-basis: 50%;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu__element{
+    flex-basis: 50%;
+    align-self: center;
+    opacity: .7;
+    transition: .2s linear;
+}
+.menu__element img{
+    display: block;
+    margin: 0 auto 15px auto;
+    transform: scale(1.1);
+    transition: .2s linear;
+}
+.menu__paragraph{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.menu__element:hover{
+    opacity: 1;
+}
+.menu__element:hover img{
+    transform: scale(1.2);
+}
+/* ====================================================== RESTAURANT SECTION ====================================================== */
