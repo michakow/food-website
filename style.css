@@ -14,9 +14,11 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+
 .side-panel{
     position: sticky;
     top: 0;
+    left: 0;
     bottom: 0;
     width: 90px;
     background-image: linear-gradient(rgb(109,48,48), rgb(0,0,0));
@@ -62,4 +64,67 @@ body{
 .side-panel__social-link:hover{
     color: rgb(252,240,138);
     border-color: rgb(252,240,138);
+}
+
+.main{
+    flex-grow: 1;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 90px;
+    right: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: #466;
+}
+.header__logo{
+    flex-basis: 20%;
+}
+.header__logo img{
+    height: 80px;
+    cursor: pointer;
+}
+.header__navbar{
+    flex-basis: 70%;
+}
+.header__list{
+    list-style: none;
+    font-size: 0;
+}
+.header__list-item{
+    display: inline-block;
+    margin-left: 50px;
+}
+.header__paragraph{
+    display: inline;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: cornsilk;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.header__paragraph:hover{
+    border-bottom: 2px solid cornsilk;
+}
+.header__newsletter{
+    flex-basis: 10%;
+}
+.header__newsletter-button{
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(226,213,99);
+    border: none;
+    cursor: pointer;
+}
+.header__newsletter-button:hover{
+    background-color: rgb(252,240,138);
+}
+.header__newsletter-button:active{
+    background-color: rgb(231, 222, 135)
 }
