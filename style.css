@@ -158,6 +158,15 @@ body{
 .home__span-h2{
     color: rgb(219,32,32);
 }
+.js-section-content{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .5s .5s;
+}
+.js-section-content.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 /* ====================================================== MENU SECTION ====================================================== */
 .menu{
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url('./img/menu.jpg');
