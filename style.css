@@ -217,3 +217,53 @@ body{
     transform: scale(1.2);
 }
 /* ====================================================== RESTAURANT SECTION ====================================================== */
+.restaurant{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.6)),url('./img/restaurant.jpg');
+}
+.restaurant__info-area{
+    width: 90%;
+    height: 90%;
+    margin: 25px auto 0 auto;
+    padding: 30px;
+    background-color: rgba(226,226,226,.9);
+    border: 3px solid rgba(0,0,0,.3);
+    border-radius: 60px;
+    display: flex;
+}
+.restaurant__left-side{
+    flex-basis: 60%;
+}
+.restaurant__icons{
+    width: 80%;
+    margin: 80px auto 100px;
+    text-align: center;
+    word-spacing: 50px;
+}
+.restaurant__icon{
+    font-size: 240px;
+    color: rgb(168,41,41);
+}
+.restaurant__address{
+    margin-left: 60px;
+}
+.restaurant__header-paragraph{
+    font-size: 28px;
+}
+.restaurant__header-paragraph-icon{
+    color: rgb(84,131,46);
+}
+.restaurant__bottom-line{
+    height: 1px;
+    width: 70%;
+    margin: 5px 0 20px 0;
+    background-color: rgba(0,0,0,.2);
+}
+.restaurant__paragraph{
+    margin-left: 45px;
+}
+.restaurant__parahraph--location{
+    font-size: 18px;
+}
+.restaurant__right-side{
+    flex-basis: 40%;
+}
