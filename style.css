@@ -267,3 +267,29 @@ body{
 .restaurant__right-side{
     flex-basis: 40%;
 }
+.restaurant__hours-status{
+    margin-top: 50px;
+}
+.restaurant__time-table{
+    margin-left: 45px;
+}
+.restaurant__time-table-cell{
+    padding: 5px 0;
+}
+.restaurant__time-table-day{
+    padding-right: 40px;
+}
+.restaurant__time-table-hours-open{
+    text-align: center;
+}
+.restaurant__contact{
+    margin-top: 70px;
+}
+.restaurant__parahraph--contact{
+    margin-bottom: 10px;
+}
+.restaurant__paragraph-contact-icon{
+    margin-right: 5px;
+    font-size: 22px;
+    vertical-align: sub;
+}
