@@ -1,25 +1,42 @@
 const navbarItems = document.querySelectorAll('.js-navbar-item');
 const sections = document.querySelectorAll('.section');
+const newsletterButton = document.querySelector('.js-button');
+const popup = document.querySelector('.newsletter-popup');
+const popupExit = popup.querySelector('.newsletter-popup__exit');
 
 let currentSectionIndex = 0;
 
-const contentHide = (index) => {
+const sectionContentHide = (index) => {
     sections[index].querySelector('.js-section-content').classList.remove('show');
 }
 
-const contentShow = (index) => {
+const sectionContentShow = (index) => {
     sections[index].querySelector('.js-section-content').classList.add('show');
 }
 
-contentShow(0);
+const newsletterToogleShow = () => {
+    popup.classList.toggle('show');
+    popup.querySelector('.newsletter-popup__content').classList.toggle('show');
+    popupExit.classList.toggle('show');
+}
+
+sectionContentShow(0);
 
 navbarItems.forEach((navbarItem, itemIndex) => {
     navbarItem.addEventListener('click', () => {
-        contentHide(currentSectionIndex);
+        sectionContentHide(currentSectionIndex);
         sections[itemIndex].scrollIntoView({behavior: 'smooth'});
-        contentShow(itemIndex);
+        sectionContentShow(itemIndex);
         currentSectionIndex = itemIndex;
     })
+})
+
+newsletterButton.addEventListener('click', () => {
+    newsletterToogleShow();
+})
+
+popupExit.addEventListener('click', () => {
+    newsletterToogleShow();
 })
 
 window.addEventListener('load', () => {
