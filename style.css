@@ -361,6 +361,9 @@ body{
     border-style: solid;
     border-color: #999;
 }
+.newsletter-popup__email-input:invalid{
+    box-shadow: none;
+}
 .newsletter-popup__exit{
     display: block;
     position: absolute;

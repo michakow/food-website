@@ -3,6 +3,7 @@ const sections = document.querySelectorAll('.section');
 const newsletterButton = document.querySelector('.js-button');
 const popup = document.querySelector('.newsletter-popup');
 const popupExit = popup.querySelector('.newsletter-popup__exit');
+const newsletterForm = document.querySelector('.js-form');
 
 let currentSectionIndex = 0;
 
@@ -33,6 +34,11 @@ navbarItems.forEach((navbarItem, itemIndex) => {
 
 newsletterButton.addEventListener('click', () => {
     newsletterToogleShow();
+})
+
+newsletterForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    document.querySelector('.newsletter-popup__email-input').value = '';
 })
 
 popupExit.addEventListener('click', () => {
