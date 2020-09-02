@@ -4,6 +4,7 @@ const newsletterButton = document.querySelector('.js-button');
 const popup = document.querySelector('.newsletter-popup');
 const popupExit = popup.querySelector('.newsletter-popup__exit');
 const newsletterForm = document.querySelector('.js-form');
+const hamburgerButton = document.querySelector('.header__hamburger-menu');
 
 let currentSectionIndex = 0;
 
@@ -29,6 +30,7 @@ navbarItems.forEach((navbarItem, itemIndex) => {
         sections[itemIndex].scrollIntoView({behavior: 'smooth'});
         sectionContentShow(itemIndex);
         currentSectionIndex = itemIndex;
+        document.querySelector('.header__navbar').classList.toggle('active');
     })
 })
 
@@ -43,6 +45,10 @@ newsletterForm.addEventListener('submit', (event) => {
 
 popupExit.addEventListener('click', () => {
     newsletterToogleShow();
+})
+
+hamburgerButton.addEventListener('click', () => {
+    document.querySelector('.header__navbar').classList.toggle('active');
 })
 
 window.addEventListener('load', () => {
