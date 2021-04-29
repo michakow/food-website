@@ -413,6 +413,7 @@ body{
 .restaurant__info-area{
     width: 90%;
     height: 90%;
+    min-height: 80%;
     margin: 25px auto 0 auto;
     padding: 30px;
     background-color: rgba(226,226,226,.9);
@@ -665,6 +666,7 @@ body{
     color: rgb(226,213,99);
     opacity: 0;
     transition: .5s .3s linear;
+    cursor: pointer;
 }
 .newsletter-popup__exit.show{
     opacity: 1;
