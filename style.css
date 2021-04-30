@@ -353,12 +353,10 @@ body{
 }
 @media screen and (max-width: 1300px){
     .menu__paragraph{
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 1040px){
-    .menu__paragraph{
         font-size: 10px;
+    }
+    .menu__element img{
+        width: 60%;
     }
 }
 @media screen and (max-width: 770px){
@@ -505,16 +503,9 @@ body{
     .restaurant__info-area{
         padding: 0;
     }
-}
-@media screen and (max-width: 1199px){
     .restaurant__icons{
-        word-spacing: 30px;
+        margin: 80px auto 90px;
     }
-    .restaurant__icon{
-        font-size: 180px;
-    }
-}
-@media screen and (max-width: 1040px){
     .restaurant__icon{
         font-size: 140px;
     }
@@ -529,6 +520,17 @@ body{
     }
     .restaurant__parahraph--location{
         font-size: 14px;
+    }
+    .restaurant__contact{
+        margin-top: 40px;
+    }
+    .restaurant__hours-status{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .restaurant__icons{
+        word-spacing: 30px;
     }
 }
 @media screen and (max-width: 770px){
