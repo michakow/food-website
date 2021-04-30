@@ -352,6 +352,10 @@ body{
     transform: scale(1.2);
 }
 @media screen and (max-width: 1300px){
+    .menu__menu-card{
+        margin: 20px auto 0 auto;
+        height: 90%;
+    }
     .menu__paragraph{
         font-size: 10px;
     }
@@ -411,7 +415,6 @@ body{
 .restaurant__info-area{
     width: 90%;
     height: 90%;
-    min-height: 80%;
     margin: 25px auto 0 auto;
     padding: 30px;
     background-color: rgba(226,226,226,.9);
@@ -502,30 +505,35 @@ body{
 @media screen and (max-width: 1300px){
     .restaurant__info-area{
         padding: 0;
+        margin: 0px auto 0 auto;
+        height: 95%;
     }
     .restaurant__icons{
-        margin: 80px auto 90px;
+        margin: 80px auto 80px;
     }
     .restaurant__icon{
-        font-size: 140px;
+        font-size: 120px;
     }
     .restaurant__header-paragraph{
-        font-size: 20px;
+        font-size: 18px;
     }
     .restaurant__paragraph-contact-icon{
-        font-size: 16px;
+        font-size: 14px;
     }
     .restaurant__time-table-cell, .restaurant__parahraph--contact{
-        font-size: 12px;
+        font-size: 11px;
     }
     .restaurant__parahraph--location{
-        font-size: 14px;
+        font-size: 12px;
     }
     .restaurant__contact{
         margin-top: 40px;
     }
     .restaurant__hours-status{
-        margin-top: 30px;
+        margin-top: 15px;
+    }
+    .restaurant__bottom-line{
+        margin: 5px 0 15px 0;
     }
 }
 @media screen and (max-width: 1199px){
